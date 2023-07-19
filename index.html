@@ -6,7 +6,11 @@
     <title>Happy Coffee</title>
     <link rel="icon" type="image/x-icon" href="assests/logo.png" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="content-1">
@@ -32,13 +36,13 @@
       <div class="logo-container">
         <img src="assests/logo.png" alt="" class="logo" />
         <div class="logo-title">
-          <p class="text-bevan">Happy</p>
-          <p class="text-cursive p-orange">Coffee</p>
+          <p class="text-bevan" id="happy">Happy</p>
+          <p class="text-cursive p-orange" id="coffee">Coffee</p>
         </div>
       </div>
       <hr />
       <div class="cards">
-        <div class="card">
+        <div class="card" id="card-left">
           <img src="assests/latte.jpg" alt="" />
           <div class="card-text">
             <p class="card-title text-cursive p-orange">Latte</p>
@@ -51,7 +55,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-left">
           <img src="assests/cappuchino.jpg" alt="" />
           <div class="card-text">
             <p class="card-title text-cursive p-orange">Cappuchino</p>
@@ -68,7 +72,7 @@
 
     <div class="content-2">
       <div class="cards">
-        <div class="card">
+        <div class="card" id="card-right">
           <img src="assests/americano.jpg" alt="" />
           <div class="card-text">
             <p class="card-title text-cursive p-orange">Americano</p>
@@ -81,7 +85,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="card-right">
           <img src="assests/icedcoffee.jpg" alt="" />
           <div class="card-text">
             <p class="card-title text-cursive p-orange">Iced Coffee</p>
